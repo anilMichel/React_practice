@@ -1,17 +1,12 @@
-import './App.css';
-import React, { useState, useEffect } from 'react';
-// import StaMgmt from './Components/StaMgmt';
+import React from 'react'
+import ApiExample from './Components/ApiExample'
 
-function App() {
-  const [count, setCount] = useState(0)
-  useEffect(()=>{console.log("clicked")},[count])
+const App = () => {
   return (
-    <div className="App">
-      {count} <br />  <br />
-      <button onClick={()=>setCount(count+1)}>Penchuko ra..</button>
-      
+    <div>
+      <ApiExample />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
